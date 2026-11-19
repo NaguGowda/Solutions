@@ -6,7 +6,7 @@ from browsemng import BrowserLauncher
 @pytest.mark.asyncio
 async def test_page():
     browsers_to_test = ["chromium"]
-    url = "https://uat-digitalfactory.heromotocorp.com/login"
+    url = "https://uat-"
 
     async with async_playwright() as p:
         for browser_name in browsers_to_test:
@@ -41,7 +41,7 @@ if __name__ == "__main__":
 #         browser = p.chromium.launch(channel="chrome", headless=False)
 #         page = browser.new_page()
 #         browsers_to_test = ["chromium"]
-#         url= page.goto("https://uat-digitalfactory.heromotocorp.com/login")
+#         url= page.goto("https://uat-")
 #
 #         with (sync_playwright() as p):
 #             for browser_name in browsers_to_test:
